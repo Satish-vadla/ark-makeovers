@@ -1,122 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ARK Makeovers | Professional Makeup Artist</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-<body>
+* {
+  box-sizing: border-box;
+}
 
-<header>
-  <h1>ARK Makeovers</h1>
-  <p>Professional Bridal & Occasion Makeup</p>
-</header>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.7;
+}
 
-<section class="hero">
-  <h2>Look Radiant. Feel Confident. Be Unforgettable.</h2>
-  <p>Personalized makeup artistry for your most special moments</p>
-  <a class="btn" href="https://wa.me/+91 7569826022" target="_blank">Book on WhatsApp</a>
-</section>
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #1c1c1c, #000);
+  color: #fff;
+  text-align: center;
+  padding: 35px 20px;
+}
 
-<section>
-  <h2>About Me</h2>
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    I’m a professional makeup artist with 3+ years of experience helping brides and clients
-    look their absolute best. I believe makeup should enhance your natural beauty, not hide it.
-    Every look is customized to suit your skin tone, features, and occasion.
-  </p>
-</section>
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
 
-<section class="portfolio">
-  <h2>Portfolio</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/300x350" alt="">
-    <img src="https://via.placeholder.com/300x350" alt="">
-    <img src="https://via.placeholder.com/300x350" alt="">
-    <img src="https://via.placeholder.com/300x350" alt="">
-  </div>
-</section>
+header p {
+  color: #f8c8d8;
+}
 
-<section class="packages">
-  <h2>Makeup Packages</h2>
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #fdecec, #f8c8d8);
+  text-align: center;
+  padding: 90px 20px;
+}
 
-  <div class="package-card">
-    <h3>Party Makeup</h3>
-    <p class="price">₹5,000+</p>
-    <ul>
-      <li>HD Makeup</li>
-      <li>Hairstyling</li>
-      <li>Eye Lashes</li>
-    </ul>
-    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
-  </div>
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
 
-  <div class="package-card featured">
-    <h3>Bridal Makeup</h3>
-    <p class="price">₹15,000+</p>
-    <ul>
-      <li>HD / Bridal Makeup</li>
-      <li>Hair Styling</li>
-      <li>Saree Draping</li>
-      <li>Lashes & Lens</li>
-    </ul>
-    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
-  </div>
+.hero p {
+  font-size: 18px;
+}
 
-  <div class="package-card">
-    <h3>Pre-Wedding</h3>
-    <p class="price">₹8,000+</p>
-    <ul>
-      <li>Natural / Glam Look</li>
-      <li>Hair Styling</li>
-      <li>Eye Makeup</li>
-    </ul>
-    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
-  </div>
-</section>
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #1c1c1c;
+  color: #fff;
+  padding: 14px 34px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
 
-<section>
-  <h2>Client Reviews</h2>
+.btn:hover {
+  background: #c89b3c;
+  color: #fff;
+}
 
-  <!-- GOOGLE REVIEWS EMBED -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m2!1m1!1sARK%20Makeovers"
-    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
-</section>
+.btn.small {
+  padding: 10px 24px;
+  font-size: 14px;
+}
 
-<section class="services-bottom">
-  <h2>Services</h2>
-  <ul>
-    <li>Special Occasion Makeup</li>
-    <li>Bridal & Non-Bridal Makeup</li>
-    <li>HD Makeup & Hairstyling</li>
-    <li>Pre-Wedding Party Makeup</li>
-    <li>Saree Draping</li>
-    <li>Complementary Eye Lashes & Eye Lens</li>
-  </ul>
-</section>
+/* SECTIONS */
+section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 70px 20px;
+}
 
-<section class="address">
-  <h2>Address</h2>
-  <p>Hyderabad & Remote</p>
-  <p>Open to Travel</p>
-</section>
+section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #1c1c1c;
+  position: relative;
+}
 
-<section class="contact">
-  <h2>Book Your Appointment</h2>
-  <p>Have questions or ready to book your makeup session?</p>
-  <a class="btn" href="https://wa.me/+91 7569826022">Contact on WhatsApp</a>
-</section>
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #c89b3c;
+  display: block;
+  margin: 10px auto 0;
+}
 
-<footer>
-  <p>© 2025 ARK Makeovers | All Rights Reserved</p>
-</footer>
+/* PORTFOLIO */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/+91 7569826022" class="whatsapp-float" target="_blank">💬</a>
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
 
-</body>
-</html>
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* PACKAGES */
+.packages {
+  background: #faf7f7;
+  text-align: center;
+}
+
+.package-card {
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  padding: 35px 30px;
+  margin: 20px;
+  display: inline-block;
+  width: 300px;
+  border-radius: 18px;
+  vertical-align: top;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+}
+
+.package-card.featured {
+  border: 2px solid #c89b3c;
+}
+
+.package-card h3 {
+  color: #1c1c1c;
+}
+
+.package-card .price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c89b3c;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-card li {
+  padding: 6px 0;
+}
+
+/* SERVICES */
+.services-bottom {
+  background: linear-gradient(135deg, #fdecec, #f8c8d8);
+  text-align: center;
+}
+
+.services-bottom ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-bottom li {
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+/* ADDRESS */
+.address {
+  text-align: center;
+  background: #faf7f7;
+}
+
+/* CONTACT */
+.contact {
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact p {
+  color: #f8c8d8;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  font-size: 26px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .package-card {
+    width: 90%;
+  }
+}
