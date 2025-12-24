@@ -1,155 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARK Makeovers | Professional Makeup Artist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: #333;
-    line-height: 1.7;
-}
+<body>
 
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #000, #333);
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
-}
+<header>
+  <h1>ARK Makeovers</h1>
+  <p>Professional Bridal & Occasion Makeup</p>
+</header>
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
+<section class="hero">
+  <h2>Look Radiant. Feel Confident. Be Unforgettable.</h2>
+  <p>Personalized makeup artistry for your most special moments</p>
+  <a class="btn" href="https://wa.me/+91 7569826022" target="_blank">Book on WhatsApp</a>
+</section>
 
-/* HERO */
-.hero {
-    background: #fdecec;
-    text-align: center;
-    padding: 70px 20px;
-}
+<section>
+  <h2>About Me</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    I’m a professional makeup artist with 3+ years of experience helping brides and clients
+    look their absolute best. I believe makeup should enhance your natural beauty, not hide it.
+    Every look is customized to suit your skin tone, features, and occasion.
+  </p>
+</section>
 
-.hero h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-}
+<section class="portfolio">
+  <h2>Portfolio</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x350" alt="">
+    <img src="https://via.placeholder.com/300x350" alt="">
+    <img src="https://via.placeholder.com/300x350" alt="">
+    <img src="https://via.placeholder.com/300x350" alt="">
+  </div>
+</section>
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 14px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    margin-top: 20px;
-    font-weight: 500;
-}
+<section class="packages">
+  <h2>Makeup Packages</h2>
 
-.btn.small {
-    padding: 10px 22px;
-    font-size: 14px;
-}
+  <div class="package-card">
+    <h3>Party Makeup</h3>
+    <p class="price">₹5,000+</p>
+    <ul>
+      <li>HD Makeup</li>
+      <li>Hairstyling</li>
+      <li>Eye Lashes</li>
+    </ul>
+    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
+  </div>
 
-/* SECTIONS */
-section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 20px;
-}
+  <div class="package-card featured">
+    <h3>Bridal Makeup</h3>
+    <p class="price">₹15,000+</p>
+    <ul>
+      <li>HD / Bridal Makeup</li>
+      <li>Hair Styling</li>
+      <li>Saree Draping</li>
+      <li>Lashes & Lens</li>
+    </ul>
+    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
+  </div>
 
-section h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
+  <div class="package-card">
+    <h3>Pre-Wedding</h3>
+    <p class="price">₹8,000+</p>
+    <ul>
+      <li>Natural / Glam Look</li>
+      <li>Hair Styling</li>
+      <li>Eye Makeup</li>
+    </ul>
+    <a class="btn small" href="https://wa.me/+91 7569826022">Book</a>
+  </div>
+</section>
 
-/* PACKAGES */
-.packages {
-    background: #fafafa;
-}
+<section>
+  <h2>Client Reviews</h2>
 
-.package-card {
-    background: #fff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    padding: 30px;
-    margin: 20px;
-    display: inline-block;
-    width: 280px;
-    border-radius: 12px;
-    vertical-align: top;
-}
+  <!-- GOOGLE REVIEWS EMBED -->
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m2!1m1!1sARK%20Makeovers"
+    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
 
-.package-card.featured {
-    border: 2px solid #000;
-    transform: scale(1.05);
-}
+<section class="services-bottom">
+  <h2>Services</h2>
+  <ul>
+    <li>Special Occasion Makeup</li>
+    <li>Bridal & Non-Bridal Makeup</li>
+    <li>HD Makeup & Hairstyling</li>
+    <li>Pre-Wedding Party Makeup</li>
+    <li>Saree Draping</li>
+    <li>Complementary Eye Lashes & Eye Lens</li>
+  </ul>
+</section>
 
-.package-card .price {
-    font-size: 22px;
-    font-weight: 600;
-}
+<section class="address">
+  <h2>Address</h2>
+  <p>Hyderabad & Remote</p>
+  <p>Open to Travel</p>
+</section>
 
-.package-card ul {
-    list-style: none;
-    padding: 0;
-}
+<section class="contact">
+  <h2>Book Your Appointment</h2>
+  <p>Have questions or ready to book your makeup session?</p>
+  <a class="btn" href="https://wa.me/+91 7569826022">Contact on WhatsApp</a>
+</section>
 
-/* REVIEWS */
-.review-card {
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 700px;
-    border-left: 5px solid #000;
-}
+<footer>
+  <p>© 2025 ARK Makeovers | All Rights Reserved</p>
+</footer>
 
-/* SERVICES */
-.services-bottom {
-    background: #fdecec;
-}
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/+91 7569826022" class="whatsapp-float" target="_blank">💬</a>
 
-.services-bottom ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.services-bottom li {
-    padding: 8px 0;
-}
-
-/* ADDRESS */
-.address {
-    text-align: center;
-    background: #fafafa;
-}
-
-/* CONTACT */
-.contact {
-    background: #fdecec;
-    text-align: center;
-}
-
-/* FOOTER */
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .package-card {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    .hero h2 {
-        font-size: 26px;
-    }
-}
+</body>
+</html>
